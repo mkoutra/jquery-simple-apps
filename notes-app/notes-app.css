@@ -1,0 +1,46 @@
+/* @author Michalis Koutrakis */
+
+:root {
+    --container-height: 500px;
+    --container-width: 300px;
+    --date-height: 60px;
+    --main-height: 390px;
+    --footer-height: calc(var(--container-height) - var(--date-height) - var(--main-height) - 2);
+    --note-input-width: 80%;
+    --btn-color: rgb(233, 228, 228);
+    --btn-hover-color: rgb(197, 192, 192);
+    --lang-btn-width: 110px;
+}
+
+.container {
+    height: var(--container-height);
+    width: var(--container-width);
+}
+
+.date {
+    height: var(--date-height);
+}
+
+.main {
+    height: var(--main-height);
+}
+
+.footer {
+    height: var(--footer-height);
+}
+
+.footer input {
+    width: var(--note-input-width);
+}
+
+.btn {
+    background-color: var(--btn-color);
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+.language > .btn {
+    width: var(--lang-btn-width);
+}
